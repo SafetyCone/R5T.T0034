@@ -1,0 +1,3 @@
+R5T.T0034.X001 - Simple ITypeName and INamespacedTypeName extensions based on System and Magyar functionality.
+
+Goals

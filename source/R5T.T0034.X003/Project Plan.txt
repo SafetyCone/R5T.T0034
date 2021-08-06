@@ -1,0 +1,4 @@
+R5T.T0034.X003 - ITypeName extensions for Microsoft types.
+
+
+Goals

@@ -1,4 +1,4 @@
-R5T.T0034 - ITypeName, INamespacedTypeName extension method base types.
+R5T.T0034 - ITypeName and INamespacedTypeName extension method base types.
 
 Goals
 
