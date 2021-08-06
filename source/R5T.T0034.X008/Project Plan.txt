@@ -1,0 +1,3 @@
+R5T.T0034.X008 - INamespacedTypeName extensions for generating namespaced type names for Microsoft types based on INamespaceName extensions.
+
+Goals
