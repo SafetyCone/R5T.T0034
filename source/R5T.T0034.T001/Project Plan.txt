@@ -1,0 +1,4 @@
+R5T.T0034.T001 - ITypeNameAffixes extension method base.
+
+
+Goals

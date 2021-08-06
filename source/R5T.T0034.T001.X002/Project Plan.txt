@@ -1,0 +1,4 @@
+R5T.T0034.T001.X001 - Complex extensions to ITypeNameAffix.
+
+
+Goals

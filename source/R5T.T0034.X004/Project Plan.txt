@@ -1,0 +1,4 @@
+R5T.T0034.X004 - ITypeNameAffix-based extensions for ITypeName.
+
+
+Goals

@@ -1,0 +1,4 @@
+R5T.T0034.X005 - C# (and .NET) code file extension-based (R5T.T0032.X0001) extensions for ITypeName.
+
+
+Goals

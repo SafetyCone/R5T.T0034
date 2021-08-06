@@ -1,0 +1,4 @@
+R5T.T0034.X005 - C# syntax-based (R5T.L0011.T002) extensions for ITypeName.
+
+
+Goals

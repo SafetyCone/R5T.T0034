@@ -1,7 +1,10 @@
 ﻿using System;
 
+using R5T.T0034;
+using R5T.T0034.X001;
 
-namespace R5T.T0034.X001
+
+namespace System
 {
     public static class ITypeNameExtensions
     {
