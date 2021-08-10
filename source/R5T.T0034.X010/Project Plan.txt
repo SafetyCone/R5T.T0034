@@ -1,0 +1,11 @@
+R5T.T0034.X007 - ITypeName extensions providing popular affixed type names in the System and Microsoft namespaces (like IServiceCollectionExtensions).
+
+Builds on:
+
+* R5T.T0032.X002 (System type names)
+* R5T.T0032.X002 (System type names)
+* R5T.T0034.X004 (ITypeName.GetExtensionsOfTypeNameTypeName()
+
+
+
+Goals

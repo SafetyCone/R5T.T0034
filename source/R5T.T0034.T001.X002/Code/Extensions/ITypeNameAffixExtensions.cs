@@ -12,5 +12,10 @@ namespace System
         {
             return ComplexTypeNameAffixes.AggregationSuffix;
         }
+
+        public static string ExtensionsSuffix(this ITypeNameAffix _)
+        {
+            return ComplexTypeNameAffixes.ExtensionsSuffix;
+        }
     }
 }
