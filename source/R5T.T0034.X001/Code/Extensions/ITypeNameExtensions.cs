@@ -19,7 +19,7 @@ namespace System
             var isNonEmpty = typeName.IsNonEmpty(typeNameValue);
             if (!isNonEmpty)
             {
-                throw new ArgumentException(Instances.ExceptionMessage.TypeNameValueWasEmpty(), nameof(typeNameValue));
+                throw new ArgumentException(Instances.ExceptionMessageGenerator.TypeNameValueWasEmpty(), nameof(typeNameValue));
             }
         }
     }

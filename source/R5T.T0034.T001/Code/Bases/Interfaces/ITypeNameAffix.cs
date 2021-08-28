@@ -1,12 +1,15 @@
 using System;
 
+using R5T.T0039.T002;
 
-namespace R5T.T0034
+
+namespace R5T.T0034.T001
 {
     /// <summary>
     /// Empty interface as base for extension methods.
     /// </summary>
-    public interface IEnumerationTypeName
+    [ExtensionMethodBaseMarker]
+    public interface ITypeNameAffix
     {
     }
 }

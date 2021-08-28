@@ -1,0 +1,4 @@
+R5T.T0034.X007 - ITypeName extensions for C# keyword types names (like void, int, string).
+
+
+Goals

@@ -11,8 +11,8 @@ namespace System
         public static string IServiceCollection(this INamespacedTypeName namespacedTypeName)
         {
             var output = namespacedTypeName.From(
-                Instances.TypeName.IServiceCollection(),
-                Instances.NamespaceName.Microsoft().Extensions().DependencyInjection().Value());
+                Instances.NamespaceName.Microsoft().Extensions().DependencyInjection().Value(),
+                Instances.TypeName.IServiceCollection());
 
             return output;
         }

@@ -11,8 +11,8 @@ namespace System
         public static string String(this INamespacedTypeName namespacedTypeName)
         {
             var output = namespacedTypeName.From(
-                Instances.TypeName.String(),
-                Instances.NamespaceName.System().Value());
+                Instances.NamespaceName.System().Value(),
+                Instances.TypeName.String());
 
             return output;
         }
@@ -20,8 +20,8 @@ namespace System
         public static string Task(this INamespacedTypeName namespacedTypeName)
         {
             var output = namespacedTypeName.From(
-                Instances.TypeName.Task(),
-                Instances.NamespaceName.System().Threading().Tasks().Value());
+                Instances.NamespaceName.System().Threading().Tasks().Value(),
+                Instances.TypeName.Task());
 
             return output;
         }
