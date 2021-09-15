@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using R5T.T0034;
 using R5T.T0034.X009;
@@ -14,6 +16,40 @@ namespace System
         {
             var output = $"{namespaceName}{Instances.NamespaceName.TokenSeparator()}{typeName}";
             return output;
+        }
+
+        public static string GetRelativeNamespacedTypeName(this INamespacedTypeName _,
+            string namespacedTypeName,
+            string otherNamespaceName)
+        {
+            var namespacedTypeNameTokens = Instances.NamespaceName.Tokenize(namespacedTypeName);
+            var otherNamespaceNameTokens = Instances.NamespaceName.Tokenize(otherNamespaceName);
+
+            var namespacedTypeNameComplementaryTrailingTokens = namespacedTypeNameTokens.GetTrailingComplement(otherNamespaceNameTokens);
+
+            var relativeNamespacedTypeName = Instances.NamespaceName.CombineTokens(namespacedTypeNameComplementaryTrailingTokens);
+            return relativeNamespacedTypeName;
+        }
+
+        public static string GetRelativeNamespacedTypeNameOld(this INamespacedTypeName _,
+            string namespacedTypeName,
+            string otherNamespaceName)
+        {
+            var namespaceNameForType = _.GetNamespaceName(namespacedTypeName);
+
+            var isInOtherNamespace = Instances.NamespaceName.IsIn(namespaceNameForType, otherNamespaceName);
+            if(isInOtherNamespace)
+            {
+                var extraBeyondOtherNamespace = namespacedTypeName.Substring(otherNamespaceName.Length);
+
+                var output = extraBeyondOtherNamespace.TrimStart(Instances.NamespaceName.TokenSeparatorCharacter());
+                return output;
+            }
+            else
+            {
+                // Else, just return the whole namespaced type name since no part of the namespaced type name is in the other namespace.
+                return namespacedTypeName;
+            }
         }
 
         public static string GetNamespaceName(this INamespacedTypeName _,
