@@ -78,5 +78,19 @@ namespace System
             var output = Instances.NamespaceName.GetLastToken(namespacedTypeName);
             return output;
         }
+
+        /// <summary>
+        /// A description, not a transformation.
+        /// Takes the form {Type Name}: {Namespaced Type Name}.
+        /// This makes it easy to sort alphabetically and see all common type names pair with their namespaced type names.
+        /// </summary>
+        public static string GetTypeNameWithNamespacedTypeNameDescription(this INamespacedTypeName _,
+            string namespacedTypeName)
+        {
+            var typeName = _.GetTypeName(namespacedTypeName);
+
+            var output = $"{typeName}: {namespacedTypeName}";
+            return output;
+        }
     }
 }
