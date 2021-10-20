@@ -27,7 +27,14 @@ namespace System
             string interfaceName)
         {
             // Use -checked for robustness.
-            var output = _.GetDefaultImplementationClassNameForInterfaceName_Checked(interfaceName);
+            var output = _.GetTypeNameStemForInterfaceName_Checked(interfaceName);
+            return output;
+        }
+
+        public static string GetTypeNameStemFromInterfaceName(this ITypeName _,
+            string interfaceName)
+        {
+            var output = _.GetTypeNameStemForInterfaceName_Checked(interfaceName);
             return output;
         }
 
