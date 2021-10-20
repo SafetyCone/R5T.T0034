@@ -40,7 +40,7 @@ namespace System
             var isInOtherNamespace = Instances.NamespaceName.IsIn(namespaceNameForType, otherNamespaceName);
             if(isInOtherNamespace)
             {
-                var extraBeyondOtherNamespace = namespacedTypeName.Substring(otherNamespaceName.Length);
+                var extraBeyondOtherNamespace = namespacedTypeName[otherNamespaceName.Length..];
 
                 var output = extraBeyondOtherNamespace.TrimStart(Instances.NamespaceName.TokenSeparatorCharacter());
                 return output;
