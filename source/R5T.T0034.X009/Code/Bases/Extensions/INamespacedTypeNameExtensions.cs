@@ -75,7 +75,14 @@ namespace System
         public static string GetTypeName(this INamespacedTypeName _,
             string namespacedTypeName)
         {
-            var output = Instances.NamespaceName.GetLastToken(namespacedTypeName);
+            var indexOfTick = namespacedTypeName.IndexOf(Characters.Tick);
+
+            var indexOfLastPeriod = StringHelper.IsFound(indexOfTick)
+                ? namespacedTypeName.LastIndexOf(Characters.Period, indexOfTick)
+                : namespacedTypeName.LastIndexOf(Characters.Period)
+                ;
+
+            var output = namespacedTypeName[(indexOfLastPeriod + 1)..];
             return output;
         }
 
