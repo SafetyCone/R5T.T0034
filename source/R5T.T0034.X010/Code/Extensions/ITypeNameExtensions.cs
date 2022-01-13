@@ -7,9 +7,11 @@ namespace System
 {
     public static class ITypeNameExtensions
     {
-        public static string IServiceCollectionExtensions(this ITypeName typeName)
+        public static string IServiceCollectionExtensions(this ITypeName _)
         {
-            var output = typeName.GetExtensionsOfTypeNameTypeName(typeName.IServiceCollection());
+            var output = _.GetExtensionsOfTypeNameTypeName(
+                _.IServiceCollection());
+
             return output;
         }
     }
