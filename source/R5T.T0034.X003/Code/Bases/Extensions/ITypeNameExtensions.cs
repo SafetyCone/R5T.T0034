@@ -8,6 +8,11 @@ namespace System
 {
     public static class ITypeNameExtensions
     {
+        public static string IHostBuilder(this ITypeName _)
+        {
+            return MicrosoftTypeNames.IHostBuilder;
+        }
+
         public static string IServiceCollection(this ITypeName _)
         {
             return MicrosoftTypeNames.IServiceCollection;
