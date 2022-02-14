@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using R5T.Magyar;
+
 using R5T.T0034;
 using R5T.T0034.X009;
 

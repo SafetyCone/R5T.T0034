@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 
+using R5T.Magyar;
+
 using R5T.T0034;
 using R5T.T0034.X004;
 
@@ -50,8 +52,14 @@ namespace System
         {
             _.VerifyIsNonEmpty(typeName);
 
-            // Is the first character of the type name the interface name prefix character.
-            var output = typeName.First() == Instances.TypeNameAffix.InterfaceNamePrefixChar();
+            // 1) Is the name at least two characters long?
+            // 2) Is the first character of the type name the interface name prefix character?
+            // 3) Is the second character also capitalized (allowing for ImageData to be a class, while IImageData would be an interface)?
+            var output = true
+                && typeName.Length > 1
+                && typeName.First() == Instances.TypeNameAffix.InterfaceNamePrefixChar()
+                && Char.IsUpper(typeName.Second());
+
             return output;
         }
 
