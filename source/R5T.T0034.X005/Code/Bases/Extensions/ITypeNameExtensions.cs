@@ -28,11 +28,11 @@ namespace System
         }
 
         public static string GetGenericOfByTypeName(this ITypeName _,
-            string genericTypeName,
+            string genericTypeTypeName,
             string typeParameterTypeName)
         {
             var output = _.GetGenericOfByTypeNameOrNamespacedTypeName(
-                genericTypeName,
+                genericTypeTypeName,
                 typeParameterTypeName);
 
             return output;
