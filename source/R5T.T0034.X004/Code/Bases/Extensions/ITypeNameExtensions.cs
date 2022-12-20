@@ -11,6 +11,7 @@ namespace System
 {
     public static partial class ITypeNameExtensions
     {
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetClassTypeName().")]
         public static string GetClassName(this ITypeName _,
             string typeNameStem)
         {
@@ -18,6 +19,7 @@ namespace System
             return typeNameStem;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetExtensionsOfTypeNameTypeName().")]
         public static string GetExtensionsOfTypeNameTypeName(this ITypeName _,
             string typeName)
         {
@@ -25,6 +27,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperatorGetDefaultImplementationClassTypeNameForInterface.GetDefaultImplementationClassTypeNameForInterface()")]
         public static string GetDefaultImplementationClassNameForInterfaceName(this ITypeName _,
             string interfaceName)
         {
@@ -33,6 +36,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetTypeNameStemForInterfaceName()")]
         public static string GetTypeNameStemFromInterfaceName(this ITypeName _,
             string interfaceName)
         {
@@ -40,6 +44,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.GetInterfaceTypeName().")]
         public static string GetInterfaceName(this ITypeName _,
             string typeNameStem)
         {
@@ -47,6 +52,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.Is_InterfaceTypeName")]
         public static bool IsInterface(this ITypeName _,
             string typeName)
         {
@@ -63,6 +69,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.Pluralize()")]
         public static string Pluralize(this ITypeName _,
             string typeName)
         {
@@ -70,6 +77,7 @@ namespace System
             return output;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameOperator.Verify_IsInterfaceTypeName()")]
         public static void VerifyIsInterface(this ITypeName _,
             string typeName)
         {

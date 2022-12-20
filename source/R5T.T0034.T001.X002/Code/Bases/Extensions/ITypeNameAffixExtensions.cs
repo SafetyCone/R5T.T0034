@@ -13,6 +13,7 @@ namespace System
             return ComplexTypeNameAffixes.AggregationSuffix;
         }
 
+        [Obsolete("See R5T.F0000.ITypeNameAffixes.ExtensionsSuffix")]
         public static string ExtensionsSuffix(this ITypeNameAffix _)
         {
             return ComplexTypeNameAffixes.ExtensionsSuffix;

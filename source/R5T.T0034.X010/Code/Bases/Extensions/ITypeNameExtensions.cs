@@ -9,8 +9,10 @@ namespace System
     {
         public static string IServiceCollectionExtensions(this ITypeName _)
         {
+#pragma warning disable CS0618 // Type or member is obsolete
             var output = _.GetExtensionsOfTypeNameTypeName(
                 _.IServiceCollection());
+#pragma warning restore CS0618 // Type or member is obsolete
 
             return output;
         }
