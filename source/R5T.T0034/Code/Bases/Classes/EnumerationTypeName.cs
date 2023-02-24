@@ -10,7 +10,7 @@ namespace R5T.T0034
     {
         #region Static
 
-        public static EnumerationTypeName Instance { get; } = new();
+        public static EnumerationTypeName Instance { get; } = new EnumerationTypeName();
 
         #endregion
     }

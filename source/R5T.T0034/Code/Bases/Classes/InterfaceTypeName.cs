@@ -10,7 +10,7 @@ namespace R5T.T0034
     {
         #region Static
 
-        public static InterfaceTypeName Instance { get; } = new();
+        public static InterfaceTypeName Instance { get; } = new InterfaceTypeName();
 
         #endregion
     }

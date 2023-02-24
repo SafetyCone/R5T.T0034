@@ -10,7 +10,7 @@ namespace R5T.T0034
     {
         #region Static
 
-        public static NamespacedTypeName Instance { get; } = new();
+        public static NamespacedTypeName Instance { get; } = new NamespacedTypeName();
 
         #endregion
     }

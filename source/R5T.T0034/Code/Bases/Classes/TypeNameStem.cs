@@ -10,7 +10,7 @@ namespace R5T.T0034
     {
         #region Static
 
-        public static TypeNameStem Instance { get; } = new();
+        public static TypeNameStem Instance { get; } = new TypeNameStem();
 
         #endregion
     }

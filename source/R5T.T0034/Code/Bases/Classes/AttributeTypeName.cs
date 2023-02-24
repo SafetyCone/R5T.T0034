@@ -10,7 +10,7 @@ namespace R5T.T0034
     {
         #region Static
 
-        public static AttributeTypeName Instance { get; } = new();
+        public static AttributeTypeName Instance { get; } = new AttributeTypeName();
 
         #endregion
     }
